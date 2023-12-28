@@ -67,3 +67,23 @@ const prevSlide = () => {
     activeSlide--
     renderSlider()
 }
+
+
+const images = document.querySelectorAll('.watch');
+const tooltip = document.getElementById('tooltip');
+
+images.forEach((image) => {
+    image.addEventListener('mouseover', (event) => {
+        const title = event.target.dataset.title;
+        const description = event.target.dataset.description;
+        
+        // Display tooltip
+        tooltip.innerHTML = `<strong>${title}</strong> - ${description}`;
+        tooltip.style.display = 'block';
+    });
+
+    image.addEventListener('mouseout', () => {
+        // Hide tooltip
+        tooltip.style.display = 'none';
+    });
+});

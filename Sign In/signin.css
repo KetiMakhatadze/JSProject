@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+.blur-background {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  filter: blur(30px);
+  object-fit: cover;
+}
+
+.box {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    filter: brightness();
+    margin-top: 10%;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #2F184B;
+}
+
+#email, #password {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #2F184B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    width: 87%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #2F184B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

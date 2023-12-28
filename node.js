@@ -69,21 +69,18 @@ const prevSlide = () => {
 }
 
 
-const images = document.querySelectorAll('.watch');
-const tooltip = document.getElementById('tooltip');
+const watchElements = document.getElementsByClassName("watch");
 
-images.forEach((image) => {
-    image.addEventListener('mouseover', (event) => {
-        const title = event.target.dataset.title;
-        const description = event.target.dataset.description;
-        
-        // Display tooltip
-        tooltip.innerHTML = `<strong>${title}</strong> - ${description}`;
-        tooltip.style.display = 'block';
-    });
+for (let i = 0; i < watchElements.length; i++) {
+  watchElements[i].addEventListener("mouseover", mouseOver);
+  watchElements[i].addEventListener("mouseout", mouseOut);
+}
 
-    image.addEventListener('mouseout', () => {
-        // Hide tooltip
-        tooltip.style.display = 'none';
-    });
-});
+function mouseOver() {
+  this.style.filter = "blur(10px)";
+
+}
+
+function mouseOut() {
+  this.style.filter = "blur(0)";
+}

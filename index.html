@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./images/logo.png" alt="Anime Logo" class="logo">
+            <h1 class="anime">Anime K</h1>
+        </div>
+        <nav>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Main Information</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">
+                    <span>Language</span>
+                </a>
+                <div class="drop-content">
+                    <a class="drop-menu" href="" >KA</a>
+                    <a class="drop-menu" href="">EN</a>
+                </div>
+            </li>
+        
+            <li class="dropdown">
+                <a href="#">
+                    <span>Ranking</span>
+                </a>
+                <div class="drop-content">
+                    <a class="drop-menu" href="signin" >Sign In</a>
+                    <a class="drop-menu" href="signup">Sign Up</a>
+                </div>
+            </li>        
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slider-content"></div>
+        <button onclick="prevSlide()" class="prev">Previous</button>
+        <button onclick="nextSlide()" class="next">Next</button>
+    </div>
+    
+
+    <script src="node.js"></script>
+</body>
+</html>

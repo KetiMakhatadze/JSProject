@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
+    <div>
+        <img src="/Images/background.jpg" class="blur-background">
+    </div>
+    <div class="box">
+        <div class="text1"><span>Sign Up</span></div>
+        <form id="form" novalidate>
+            <div class="input-field">
+                <label class="text2" for="firstName">First Name</label><br>
+                <input type="text" id="firstNameInput" name="firstName">
+                <span class="alert" id="alertFirstName" style="display: none;">Please enter your first name</span>
+            </div>
+            <div class="input-field">
+                <label class="text2" for="lastName">Last Name</label><br>
+                <input type="text" id="lastNameInput" name="lastName">
+                <span class="alert" id="alertLastName" style="display: none;">Please enter your last name</span>
+            </div>
+            <div class="input-field">
+                <label class="text2" for="email">Email</label><br>
+                <input type="email" id="emailInput" name="email">
+                <span class="alert" id="alertEmail1" style="display: none;">Please enter an email</span>
+                <span class="alert" id="alertEmail2" style="display: none;">Please enter a valid email</span>
+            </div>
+            <div class="input-field">
+                <label class="text2" for="password">Password</label><br>
+                <input type="password" id="passwordInput" name="password">
+                <span class="alert" id="alertPassword1" style="display: none;">Please enter a password</span>
+                <span class="alert" id="alertPassword2" style="display: none;">Password must be at least 8 characters long</span>
+            </div>
+            <div class="input-field">
+                <label class="text2" for="repeatPassword">Confirm Password</label><br>
+                <input type="password" id="repeatPasswordInput" name="repeatPassword">
+                <span class="alert" id="alertRepeatPassword" style="display: none;">Passwords do not match</span>
+            </div>
+        </form>
+        <button id="submit">Submit</button>
+        <div id="congratulationsMessage" style="color: green; margin-top: 10px;"></div>
+    </div>
     
 
     <script src="signup.js"></script>

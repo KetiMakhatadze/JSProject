@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+.blur-background {
+  position: absolute;
+  width: 99%;
+  height: 80%;
+  filter: blur(30px);
+  object-fit: cover;
+}
+.box {
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    background-color: #C8B1E4;
+    padding: 20px;
+    filter: brightness();
+    margin: auto;
+    margin-top: 10%;    
+}
+
+.text1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #2F184B;
+}
+
+.text2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2F184B;
+}
+
+.input-field {
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: #2F184B;
+    font-size: 15px;
+}
+
+input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 4px;
+    width: 100%;
+    padding: 10px;
+    background-color:  #2F184B;
+    color: white;
+}
+
+.alert {
+    display: none;
+    color: red;
+}
+.congratulationsMessage {
+    width: calc(100% - 5px); 
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 4px;
+}

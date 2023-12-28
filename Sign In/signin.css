@@ -4,19 +4,18 @@ body{
 .blur-background {
   position: absolute;
   width: 99%;
-  height: 99%;
+  height: 80%;
   filter: blur(30px);
   object-fit: cover;
 }
 
 .box {
-    border: 3px solid black;
     border-radius: 10px;
     margin: auto;
     height: 350px;
     width: 400px;
     text-align: center;
-    background-color: white;
+    background-color: #C8B1E4;
     padding: 20px;
     filter: brightness();
     margin-top: 10%;
@@ -41,11 +40,10 @@ input {
     width: 87%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
     border-radius: 3px;
 }
 button {
-    width: 100%;
+    width: 93%;
     padding: 10px;
     background-color:  #2F184B;
     color: white;

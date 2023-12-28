@@ -43,7 +43,6 @@ nav a:hover {
     position: absolute;
     top: 30px;
     left: 0;
-    /* box-shadow: 4px 4px 4px #000000; */
     padding: 5px;
     border-radius: 10px;
     width: 90px;
@@ -51,9 +50,7 @@ nav a:hover {
 }
 
 .drop-content a {
-    color: black;
-    /* border-radius: 5px; */
-    /* background-color: #9B72CF; */
+    color: #2f184b;
     display: block;
     padding: 10px;
     margin: 0 5px;
@@ -66,6 +63,7 @@ nav a:hover {
 .dropdown:hover
 .drop-content {
     display: block;
+    z-index: 1000;
 }
 
 .drop-content a:hover {
@@ -172,4 +170,30 @@ li{
     width: 400px;
     height: 500px;
     border-radius: 10px;
+}
+
+
+footer{
+    background-color: #2f184b;
+    width: 99.7%;
+    height: 180px;
+    border: #2f184b;
+}
+
+.footer{
+    display: flex;
+}
+
+.contact{
+    color: #F4EFFA;
+    margin-left: 1550px;
+    font-size: 20px;
+    margin-top: 50px;
+    left: 0;
+}
+
+.info{
+    color: #F4EFFA;
+    margin-left: 1550px;
+    font-size: 16px;
 }

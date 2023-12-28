@@ -1,8 +1,9 @@
 body{
-    background-color: black;
+    background-color: #2F184B;
 }
 .blur-background {
   position: absolute;
+  background-color: #2F184B;
   width: 99%;
   height: 80%;
   filter: blur(30px);

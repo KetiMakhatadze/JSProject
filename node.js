@@ -84,3 +84,4 @@ function mouseOver() {
 function mouseOut() {
   this.style.filter = "blur(0)";
 }
+
